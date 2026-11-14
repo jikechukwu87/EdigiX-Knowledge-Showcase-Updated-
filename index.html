@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EdigiX — Bridging Classrooms to Tech Careers</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+<body>
+
+<!-- ============================================================
+     MARKETING SITE
+     ============================================================ -->
+<div id="screen-marketing" class="screen active">
+
+  <header class="site-header">
+    <div class="wrap">
+      <a href="#" class="brand">
+        <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="6" y="60" width="88" height="26" rx="6" fill="#0b1a33"/>
+          <rect x="16" y="14" width="68" height="48" rx="4" stroke="#0b1a33" stroke-width="5" fill="none"/>
+          <path d="M28 52 C36 44, 34 36, 28 30 C40 32, 44 22, 42 14 C52 22, 58 30, 50 44 C46 50, 38 52, 28 52Z" fill="url(#g1)"/>
+          <circle cx="30" cy="26" r="6" fill="#2fb6d9"/>
+          <g fill="#ff7a52"><circle cx="64" cy="20" r="2.4"/><circle cx="72" cy="28" r="1.6"/><circle cx="60" cy="30" r="1.4"/></g>
+          <defs><linearGradient id="g1" x1="28" y1="52" x2="52" y2="14" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#1fc2c2"/><stop offset="0.5" stop-color="#2fb6d9"/><stop offset="1" stop-color="#ef4d82"/>
+          </linearGradient></defs>
+        </svg>
+        <span class="brand-name">EdigiX</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#mission">Mission</a>
+        <a href="#roles">Portals</a>
+        <a href="#curriculum">Curriculum</a>
+        <a href="#ai">AI Guidance</a>
+      </nav>
+      <div class="nav-cta">
+        <button class="btn btn-ghost" onclick="goToLogin()">Log in</button>
+        <button class="btn btn-primary" onclick="goToLogin()">Get started</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Nigerian curriculum-aligned tech education</span>
+        <h1 style="margin-top:18px;">Bridging classrooms to <span class="accent-word">tech careers</span></h1>
+        <p class="hero-sub">EdigiX connects schools, industry practitioners, students and parents on one platform — turning the FGN digital technology curriculum into practical, mentor-led learning from Primary 4 through SS3.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" onclick="goToLogin()">Enter your portal →</button>
+          <a href="#roles" class="btn btn-ghost">See how it works</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><b>5</b><span>PORTAL ROLES</span></div>
+          <div class="hero-stat"><b>P4–SS3</b><span>CURRICULUM SPAN</span></div>
+          <div class="hero-stat"><b>SAT</b><span>LIVE PRACTICALS</span></div>
+          <div class="hero-stat"><b>2</b><span>AI GUIDANCE AGENTS</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <svg class="ascent-svg" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="ascent-path" d="M40 360 C 110 360, 120 300, 90 260 C 150 270, 190 220, 170 170 C 230 190, 280 140, 260 90 C 300 100, 340 70, 350 40"
+            stroke="url(#gradAscent)" stroke-width="6" stroke-linecap="round"/>
+          <circle class="ascent-dot" cx="40" cy="360" r="7" fill="#1fc2c2" style="animation-delay:.4s"/>
+          <circle class="ascent-dot" cx="90" cy="260" r="7" fill="#2fb6d9" style="animation-delay:1s"/>
+          <circle class="ascent-dot" cx="170" cy="170" r="7" fill="#ff7a52" style="animation-delay:1.6s"/>
+          <circle class="ascent-dot" cx="260" cy="90" r="7" fill="#ef4d82" style="animation-delay:2s"/>
+          <circle class="ascent-dot" cx="350" cy="40" r="9" fill="#ffffff" style="animation-delay:2.3s"/>
+          <text x="18" y="392" fill="rgba(255,255,255,0.4)" font-family="IBM Plex Mono" font-size="11">PRIMARY 4</text>
+          <text x="300" y="30" fill="rgba(255,255,255,0.8)" font-family="IBM Plex Mono" font-size="11">TECH CAREER</text>
+          <defs>
+            <linearGradient id="gradAscent" x1="40" y1="360" x2="350" y2="40" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#1fc2c2"/><stop offset="0.5" stop-color="#2fb6d9"/><stop offset="0.8" stop-color="#ff7a52"/><stop offset="1" stop-color="#ef4d82"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="mission">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Mission</span>
+        <h2>One platform, four kinds of people, one shared record of progress.</h2>
+        <p>Every school runs its own portal. Every student follows the same national curriculum. Every parent watches the same report — no matter what device, no matter where the tutor is teaching from.</p>
+      </div>
+      <div class="feature-split">
+        <div>
+          <ul class="feature-list">
+            <li><span class="feature-dot"></span><div><b>Schools stay independent, data stays connected.</b><span>Each school gets its own portal and a school admin/teacher, while a super admin keeps the whole network consistent.</span></div></li>
+            <li><span class="feature-dot"></span><div><b>Industry practitioners teach the practical side.</b><span>Graphic designers, developers and other tech tutors assign real tasks and grade them directly on the platform.</span></div></li>
+            <li><span class="feature-dot"></span><div><b>Saturdays are for building, not just watching.</b><span>Weekly live practicals cover that week's curriculum topic and are recorded for anyone who missed it.</span></div></li>
+            <li><span class="feature-dot"></span><div><b>Parents see it as it happens.</b><span>Guardians log in with the details captured at registration to track scores, projects and attendance.</span></div></li>
+          </ul>
+        </div>
+        <div class="ai-panel">
+          <span class="ai-chip">AI GUIDANCE</span>
+          <h3 style="font-size:22px; margin-bottom:12px;">Two agents, one purpose: point students somewhere useful next.</h3>
+          <p style="color:rgba(255,255,255,0.68); font-size:14.5px; margin-bottom:20px;">A holiday-program agent matches every student to training based on location, cost and format after a short end-of-term form. A graduation agent maps completing JSS3 and SS3 students to the tech career and training centre that fit their performance and skills.</p>
+          <button class="btn btn-ghost" onclick="document.getElementById('ai').scrollIntoView()">See how matching works →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--white); border-top:1px solid var(--line); border-bottom:1px solid var(--line);" id="roles">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Portals</span>
+        <h2>Five roles. One record of truth.</h2>
+        <p>Everyone logs into the same platform — what they see and can act on depends entirely on their role.</p>
+      </div>
+      <div class="role-grid">
+        <div class="role-card">
+          <div class="role-icon" style="background:var(--navy-950);">⌂</div>
+          <h3>Super Admin</h3>
+          <p>Onboards every school onto EdigiX and holds full add, edit and delete rights across the whole system.</p>
+        </div>
+        <div class="role-card">
+          <div class="role-icon" style="background:var(--teal);">⚙</div>
+          <h3>School Admin/Teacher</h3>
+          <p>Runs one school's portal: registers students, assigns them to tech tutors, appoints other admins, and reviews submitted projects.</p>
+        </div>
+        <div class="role-card">
+          <div class="role-icon" style="background:var(--coral);">✎</div>
+          <h3>Tech Tutor</h3>
+          <p>Industry practitioners, added by the super admin, who teach practicals, grade submitted work, and mark attendance.</p>
+        </div>
+        <div class="role-card">
+          <div class="role-icon" style="background:var(--cyan);">▣</div>
+          <h3>Student</h3>
+          <p>Works through the curriculum topic by topic, joins Saturday live sessions, and submits assignments for grading.</p>
+        </div>
+        <div class="role-card">
+          <div class="role-icon" style="background:var(--pink);">♥</div>
+          <h3>Parent / Guardian</h3>
+          <p>Logs in with the details given at registration to follow a child's scores, projects and attendance over time.</p>
+        </div>
+        <div class="role-card" style="background:linear-gradient(140deg, var(--navy-900), var(--navy-950)); border:none;">
+          <div class="role-icon" style="background:rgba(255,255,255,0.1);">✦</div>
+          <h3 style="color:#fff;">Try every portal</h3>
+          <p style="color:rgba(255,255,255,0.65); margin-bottom:16px;">Log in as any role with sample data already loaded — no setup needed.</p>
+          <button class="btn btn-primary btn-sm" onclick="goToLogin()">Open demo login →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="curriculum">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Curriculum path</span> <span class="eyebrow"><a href="https://jikechukwu87.github.io/DIGI-STOOD/Digitalsy%20App/curriculum.html">View Curriculum Details</a></span>
+        <h2>Basic digital literacy in primary school, digital technology through secondary school.</h2>
+        <p>Every topic sits on the FGN curriculum in sequence and links straight to curated videos for practical learning.</p>
+      </div>
+      <div class="path-wrap">
+        <svg class="path-line" viewBox="0 0 900 120" preserveAspectRatio="none">
+          <path d="M20 100 C 150 100, 170 60, 260 55 C 380 48, 420 30, 540 25 C 650 20, 700 12, 880 10" stroke="url(#pathGrad)" stroke-width="3" fill="none" stroke-dasharray="2 8" stroke-linecap="round"/>
+          <defs><linearGradient id="pathGrad" x1="0" y1="0" x2="900" y2="0"><stop stop-color="#1fc2c2"/><stop offset="0.5" stop-color="#ff7a52"/><stop offset="1" stop-color="#ef4d82"/></linearGradient></defs>
+        </svg>
+        <div class="path-track">
+          <div class="path-stage"><span class="path-node"></span><div class="stage-label">P4–P5</div><div class="stage-name">Digital literacy</div></div>
+          <div class="path-stage"><span class="path-node"></span><div class="stage-label">JSS1</div><div class="stage-name">Intro to tech</div></div>
+          <div class="path-stage"><span class="path-node"></span><div class="stage-label">JSS2</div><div class="stage-name">Core skills</div></div>
+          <div class="path-stage"><span class="path-node"></span><div class="stage-label">JSS3</div><div class="stage-name">Specialisation</div></div>
+          <div class="path-stage"><span class="path-node"></span><div class="stage-label">SS1–SS2</div><div class="stage-name">Applied projects</div></div>
+          <div class="path-stage"><span class="path-node"></span><div class="stage-label">SS3</div><div class="stage-name">Career mapping</div></div>
+          <div class="path-stage"><span class="path-node" style="border-color:var(--pink); background:var(--pink);"></span><div class="stage-label">GRADUATE</div><div class="stage-name">Tech career + training centre</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section on-dark" id="ai" style="background:var(--navy-950); color:#fff;">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">AI guidance agents</span>
+        <h2 style="color:#fff;">Matching, not guessing.</h2>
+        <p>Two purpose-built agents turn a student's own answers into a specific next step.</p>
+      </div>
+      <div class="role-grid" style="grid-template-columns:repeat(2,1fr);">
+        <div class="role-card" style="background:rgba(255,255,255,0.04); border-color:var(--navy-line);">
+          <div class="role-icon" style="background:var(--teal);">☀</div>
+          <h3 style="color:#fff;">Holiday-program agent</h3>
+          <p style="color:rgba(255,255,255,0.65);">Runs an end-of-term form covering format preference (online or physical), proximity, budget and the skill area a student most needs to strengthen — then returns a shortlist of training centres that fit.</p>
+        </div>
+        <div class="role-card" style="background:rgba(255,255,255,0.04); border-color:var(--navy-line);">
+          <div class="role-icon" style="background:var(--pink);">◎</div>
+          <h3 style="color:#fff;">Career-mapping agent</h3>
+          <p style="color:rgba(255,255,255,0.65);">For students completing JSS3 or SS3: weighs overall performance against currently in-demand, profitable tech skills to recommend a career path and a training centre strong in that area.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="text-align:center;">
+    <div class="wrap">
+      <h2 style="font-size:clamp(24px,3vw,32px);">Ready to see your portal?</h2>
+      <p style="color:var(--ink-soft); margin-top:12px;">Pick a role on the demo login — sample schools, students and sessions are already loaded.</p>
+      <div style="margin-top:26px;">
+        <button class="btn btn-primary" onclick="goToLogin()">Open demo login →</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span class="brand-name mono">EdigiX — Bridging Classrooms to Tech Careers</span>
+      <span>© 2026 EdigiX. Prototype build.</span>
+    </div>
+  </footer>
+</div>
+
+<!-- ============================================================
+     LOGIN SCREEN
+     ============================================================ -->
+<div id="screen-login" class="screen">
+  <div class="login-screen">
+    <div class="login-card">
+      <div class="login-top">
+        <a href="#" class="brand" onclick="goToMarketing();return false;">
+          <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="6" y="60" width="88" height="26" rx="6" fill="#ffffff" opacity="0.9"/>
+            <path d="M28 52 C36 44, 34 36, 28 30 C40 32, 44 22, 42 14 C52 22, 58 30, 50 44 C46 50, 38 52, 28 52Z" fill="url(#g2)"/>
+            <circle cx="30" cy="26" r="6" fill="#2fb6d9"/>
+            <defs><linearGradient id="g2" x1="28" y1="52" x2="52" y2="14" gradientUnits="userSpaceOnUse"><stop stop-color="#1fc2c2"/><stop offset="1" stop-color="#ef4d82"/></linearGradient></defs>
+          </svg>
+          <span class="brand-name">EdigiX</span>
+        </a>
+        <button class="btn btn-ghost btn-sm" onclick="goToMarketing()">← Back to site</button>
+      </div>
+      <span class="eyebrow">Step 1 — choose a portal</span>
+      <div class="role-pick-grid" id="rolePickGrid" style="margin-top:16px;"></div>
+
+      <div class="login-form" id="loginForm" style="display:none;">
+        <span class="eyebrow" style="margin-bottom:14px; display:inline-flex;">Step 2 — sign in</span>
+        <div class="field">
+          <label id="loginIdLabel">Email or phone number</label>
+          <input type="text" id="loginId" placeholder="e.g. amaka@edigix.demo">
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input type="password" id="loginPass" placeholder="Any value works in this demo">
+        </div>
+        <button class="btn btn-primary btn-block" onclick="attemptLogin()">Sign in →</button>
+        <p class="login-hint" id="loginHint">Demo data is pre-loaded — sign-in is simulated, any password works.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================
+     DASHBOARD SHELL
+     ============================================================ -->
+<div id="screen-dashboard" class="screen">
+  <div class="app-shell">
+    <div class="sidebar-overlay" id="sidebarOverlay" onclick="toggleSidebar(false)"></div>
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <svg class="brand-mark" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M28 52 C36 44, 34 36, 28 30 C40 32, 44 22, 42 14 C52 22, 58 30, 50 44 C46 50, 38 52, 28 52Z" fill="url(#g3)"/>
+          <circle cx="30" cy="26" r="6" fill="#2fb6d9"/>
+          <defs><linearGradient id="g3" x1="28" y1="52" x2="52" y2="14" gradientUnits="userSpaceOnUse"><stop stop-color="#1fc2c2"/><stop offset="1" stop-color="#ef4d82"/></linearGradient></defs>
+        </svg>
+        <span>EdigiX</span>
+      </div>
+      <div class="sidebar-role mono" id="sidebarRoleLabel">SUPER ADMIN</div>
+      <ul class="sidebar-nav" id="sidebarNav"></ul>
+      <div class="sidebar-foot">
+        <button onclick="logout()">↩ Switch portal / log out</button>
+      </div>
+    </aside>
+
+    <div class="main-col">
+      <div class="topbar">
+        <div style="display:flex; align-items:center; gap:14px;">
+          <button class="hamburger" onclick="toggleSidebar(true)">☰</button>
+          <div class="topbar-title" id="topbarTitle">Dashboard<span class="sub" id="topbarSub">Overview</span></div>
+        </div>
+        <div class="topbar-user">
+          <span class="badge-role mono" id="topbarBadge">SUPER ADMIN</span>
+          <div class="avatar" id="topbarAvatar">SA</div>
+        </div>
+      </div>
+      <div class="content" id="mainContent"></div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal" id="modalBody"></div>
+</div>
+
+<div class="toast" id="toast"><span class="dot"></span><span id="toastMsg"></span></div>
+
+<script src="/app (1).js"></script>
+</body>
+</html>
